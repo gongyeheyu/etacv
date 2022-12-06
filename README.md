@@ -1,5 +1,7 @@
 # etacv
 
+![ ](https://badgen.net/badge/code/etaCV/blue)
+
 ## 1.第一个实例程序  
 
 ```example

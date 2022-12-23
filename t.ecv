@@ -1,0 +1,4 @@
+output "hello world"
+var t = 1
+output t
+t = 1 + 2

@@ -1,5 +1,5 @@
 ver = '22.c14w'
-keyword = ['var','if','else','return','output','define','sleep','continue','break','int','float','string','bool','null','none','true','flase']
+keyword = ['var','if','else','return','output','define','sleep','continue','break','int','float','string','bool','null','none','true','false']
 operator = ['+','-','*','/','^','%','==','!=','<','>','<=','>=']
 filename = 'D:\\vsc\\javapro\\etacv\\t.ecv'
 count = len(open(r"D:\\vsc\\javapro\\etacv\\t.ecv",'r').readlines())
@@ -25,7 +25,7 @@ def run():
             t2 = True
         if text[4] in var:
             t4 = True
-        if t2 and t4 != 'v':
+        if t2 and t4 != True:
             new = text[2] + text[4]
             dict[text[0]]=new
 

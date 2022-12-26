@@ -8,7 +8,6 @@ var = {}
 def run():
     #output
     if text[0] == 'output':
-        #if text[1][0] != '$':
         if text[1][0] and text[-1][-1] == '"':
             del text[0]
             outf = " ".join(text)

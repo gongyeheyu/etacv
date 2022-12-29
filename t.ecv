@@ -1,4 +1,4 @@
-output "hello world"
+print "hello world"
 var t = 1
-output t
+print t
 t = 1 + 2

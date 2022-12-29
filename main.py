@@ -1,13 +1,14 @@
 ver = '22.c14w'
-keyword = ['var','if','else','return','output','define','sleep','continue','break','int','float','string','bool','null','none','true','false']
-operator = ['+','-','*','/','^','%','==','!=','<','>','<=','>=']
+keyword = ['var','if','else','return','print','define','sleep','continue','break','int','float','string','bool','null','none','true','false']
+operator = ['+','-','*','/','^','%']
+compator = ['==','!=','<','>','<=','>=']
 filename = 'D:\\vsc\\javapro\\etacv\\t.ecv'
 count = len(open(r"D:\\vsc\\javapro\\etacv\\t.ecv",'r').readlines())
 var = {}
 
 def run():
     #output
-    if text[0] == 'output':
+    if text[0] == 'print':
         if text[1][0] and text[-1][-1] == '"':
             del text[0]
             outf = " ".join(text)

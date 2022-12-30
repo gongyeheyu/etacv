@@ -6,15 +6,15 @@
 
 ```example
 //this is a example  
-output (hello,world!)  
+print "hello,world!"  
 ```
 
 首先我们看到了第一行文字：这是一段注释，etaCV有两种注释：  
 
 ```comment
-//这是单行注释  
-#这是  
-多行注释#  
+#这是单行注释  
+/*这是  
+多行注释*/  
 ```  
 
 再来看第二行文字：output()是一个输出函数，括号内为要输出的内容。  
@@ -24,12 +24,12 @@ output (hello,world!)
 下面看一个例子  
 
 ```example
-int year = 2022  
+var year = 2022  
 ```
 
 这个例子使用int关键字声明一个名为year的整数变量并给它赋值为"2022"  
 变量名可以为英文字母，数字，汉字，下划线组成，但不能以数字开头。  
-并且，etaCV对关键字，变量名大小写敏感，`int`,`Int`,`INT`并不是同一个东西，但对文件名大小写不敏感。  
+并且，etaCV对关键字，变量名，文件名大小写不敏感，`int`,`Int`,`INT`在etaCV中是同一个东西。  
 
 ## 3.数据类型  
 
@@ -37,14 +37,14 @@ int year = 2022
 我们来看一个例子  
 
 ```example  
-int y = 2022  
-str m = 11  
-output ($y + $m)  
+var y = 2022  
+var m = 11  
+print y + m  
 ```  
 
 它将会有如下输出：
 
-```output
+```print
 202211 
 ```
 
@@ -60,7 +60,7 @@ bool 布尔值
 如果你不知道一个变量是什么类型，可以通过type()函数来检验  
 
 ```type
-output type($year)  
+print type($year)  
 ```
 
 如你所见，不同类型的变量可以以字符串形式连接  
@@ -70,7 +70,7 @@ output type($year)
 etaCV中数据类型的转换很简单，如果要将year变量转换为字符串，只需要如下操作  
 
 ```str
-string $year  
+str year  
 ```
 
 转换为int型，布尔型返回为0或1，浮点数返回整数部分，字符串返回null  
@@ -84,26 +84,26 @@ string $year
 下面举几个例子：  
 
 ```example
-string a = abcdefgh  
-output ($a.list(0))  
-output ($a.list(-7))  
-output ($a.list(7))  
-output ($a.list(-0))  
-output ($a.list(0:2))  
-output ($a.list(:2))  
-output ($a.list())  
+str a = abcdefgh  
+print a.list(0)  
+print a.list(-7)  
+print a.list(7)  
+print a.list(-0)  
+print a.list(0:2)  
+print a.list(:2)  
+print a.list()  
 ```
 
 输出：
 
-```output
+```print
 a  
 a  
 h  
 h  
-a,b,c  
-a,b,c  
-a,b,c,d,e,f,g,h  
+a, b, c  
+a, b, c  
+a, b, c, d, e, f, g, h  
 ```
 
 如你所见，和其他语言一样，在第四行中，从第0个字符开始到第二个字符，但不包含第二个  
@@ -115,10 +115,10 @@ a,b,c,d,e,f,g,h
 下面的例子定义了一个函数  
 
 ```example
-define int f2c(c)   
-    int f = (c * 9/5 + 32)  
+fun f2c(c)   
+    var f = (c * 9/5 + 32)  
     return f + "˚F"  
-output f2c(35)
+print f2c(35)
 ```
   
 返回：
@@ -130,10 +130,10 @@ output f2c(35)
 第一行def关键字表示定义（或声明）一个名为f2c（）的函数，并且这个函数返回一个int型数据
 
 ```others
-关键字:var if else return define sleep continue break int float string bool null none true flase
+关键字:var print input if else return def fun sleep continue break int float string bool null none true flase
 运算符:+ - * / ^(乘方) %(取模) == != < > <= >=
+内建函数：  
 input()返回输入信息
-output()返回输出内容  
 int()返回输入数据的整数形式（布尔型返回为0或1，浮点数返回整数部分，字符串返回null(即空集)）
 float()返回输入数据的浮点数形式（布尔型返回为0或1，字符串返回null）
 str()返回输入数据的字符串形式（布尔型返回为true或flase）

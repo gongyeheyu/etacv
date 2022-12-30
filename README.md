@@ -5,7 +5,7 @@
 ## 1.第一个实例程序  
 
 ```example
-//this is a example  
+#this is a example  
 print "hello,world!"  
 ```
 

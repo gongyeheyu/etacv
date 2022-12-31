@@ -1,5 +1,6 @@
 ver = '22.c14w'
-keyword = ['var','print','input','if','else','return','def','fun','sleep','continue','break','int','float','string','bool','null','none','true','false']
+keyword = ['var','print','input','if','else','return','def','fun','sleep','continue','break',
+    'int','float','string','bool','null','none','true','false']
 operator = ['+','-','*','/','^','%']
 compator = ['==','!=','<','>','<=','>=']
 filename = 'D:\\vsc\\javapro\\etacv\\t.ecv'

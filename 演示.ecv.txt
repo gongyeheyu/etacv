@@ -1,0 +1,21 @@
+main()    #这是个可有可无的main()
+/*这也是一个注释*/
+    def fun(vari)    
+        #这是个可有可无的在main()中定义的函数
+        vari1 = "this is some word"
+        vari2='this is some word too'
+        vari3 = 2022    #这是一个整数
+        vari4 = 1.2    #这是一个浮点数
+        vari5 = vari +vari1 + vari2+vari3+vari4
+        print vari5
+        print "vari3 + vari4 is " + (vari3+vari4)
+        if vari=vari3+vari4=2023.2
+            return 0
+        else
+            return -1
+    re = fun(vari)    #这行是main()的
+    vari1 = fun.vari1
+    vari5 = fun(vari).vari5
+    if re = 0
+        print '''the function "fun" ran successfuly
+                   vari1 is "+vari1'''

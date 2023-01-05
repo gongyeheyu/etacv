@@ -1,0 +1,56 @@
+main()    #这是个可有可无的main函数
+/*main函数不是必须有的，存在时会自动调用main()*/
+
+    score = 0  #变量赋值
+
+    def rof(inp ,var)
+        if inp == var
+            print "You are right!"
+            score = score +1
+            return true
+       else
+            print "You are flase!"
+            return flase
+
+    print "Hello,World!"  #输出语句
+    sleep 3000  #休眠3000ms
+    print "I want play a game with you"
+
+    print "Do you now the year etaCV was born? "
+    inp = input("please input")  
+    #将输入内容赋值给变量inp
+    re = rof(inp ,"2022")
+    if re
+        continue
+    else
+        continue
+
+    print "Do you know what type of value '10' is?"
+    type_info = '''etaCV有四种类型：
+                          int 整数
+                          float 浮点数
+                          str 字符串
+                          bool 布尔值'''
+    inp = input("please input")
+    if inp == "int"
+        print "You are right!"
+        print type_info
+        score = score ++
+        continue
+    elif inp == "str"
+        print "You might right."
+        print type_info
+        score = score ++
+        continue
+    else
+        print "You are flase!"
+        continue
+
+    if score >= 2
+        print "You passed!"
+        sleep 3000
+        quit
+    else
+        print "You failed!"
+        sleep 3000
+        main()

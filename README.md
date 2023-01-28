@@ -1,6 +1,7 @@
 # etacv
 
-![ ](https://badgen.net/badge/code/etaCV/blue)
+![](https://badgen.net/badge/Designer/GONGYE%20Heyu/blue)
+![](https://badgen.net/badge/code/etaCV/blue)
 
 #由于本项目的README极不完善，因此恳请各位大佬帮个忙，谢谢
 

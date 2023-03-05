@@ -3,6 +3,8 @@
 ![](https://badgen.net/badge/Designer/GONGYE%20Heyu/blue)
 ![](https://badgen.net/badge/code/etaXV/blue)
 
+**本项目已于2023年3月5日进入无限期休眠，我们等待着这颗种子发光。**
+
 #由于本项目的文档即本README极不完善，部分语义仍在修改。因此恳请各位大佬帮忙，谢谢。  
 
 #本项目的开发大致以实用为目的：有需要->写文档（也有可能不写）->写代码  
